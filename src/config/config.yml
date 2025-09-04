@@ -1,0 +1,15 @@
+redis:
+  host: "10.1.130.103"
+  db: 0
+  password:
+  port: 30937
+
+drissionpage:
+  user_data_path: "D:/wiseyemask/chrome/userdata"
+  download_path: "D:/wiseyemask/chrome/download"
+
+common:
+  download_path: "D:/wiseyemask/download"
+  log_path: "D:/wiseyemask/log"
+  cache_download_path: "D:/wiseyemask/cache/download"
+  cache_log_path: "D:/wiseyemask/cache/log"
