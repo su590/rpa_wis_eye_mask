@@ -20,8 +20,9 @@ def _wis_eye_mask():
 
 def create_scheduler() -> BlockingScheduler:
     scheduler = BlockingScheduler()
-    scheduler.add_job(_wis_eye_mask, "cron", hour="*", minute=5, second=0, misfire_grace_time=100)
-    scheduler.add_job(clear_files, 'cron', hour=7, minute=30, second=0, misfire_grace_time=100)
+    scheduler.add_job(_wis_eye_mask, "cron", hour="1-23", minute=5, second=0, misfire_grace_time=100)
+    scheduler.add_job(_wis_eye_mask, "cron", hour=23, minute=55, second=0, misfire_grace_time=100)
+    # scheduler.add_job(clear_files, 'cron', hour=7, minute=30, second=0, misfire_grace_time=100)
     return scheduler
 
 

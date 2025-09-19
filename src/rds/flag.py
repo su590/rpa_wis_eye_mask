@@ -36,6 +36,20 @@ class Flag:
     def delete(self):
         REDIS.delete(f'{_PREFIX}:{self._id}')
 
+    def ttl_hms(self) -> str | None:
+        """
+        获取当前key的剩余过期时间（格式化为 HH:MM:SS)
+        :return: str（格式化后的时间），如果没有设置过期使劲啊返回None
+        """
+        ttl_seconds = REDIS.ttl(f"{_PREFIX}:{self._id}")
+        if ttl_seconds is None or ttl_seconds < 0:
+            # -1表示永不过期，-2表示key不存在
+            return None
+        hours, remainder = divmod(ttl_seconds, 3600)
+        minutes, seconds = divmod(remainder, 60)
+        return f"{hours:02}:{minutes:02}:{seconds:02}"
+
+
     @classmethod
     def clear(cls):
         key = f'{_PREFIX}:*'

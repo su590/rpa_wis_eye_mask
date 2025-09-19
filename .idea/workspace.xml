@@ -4,54 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="107c093f-41cb-4c75-abd4-dbc376e028d1" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/wis_eye_mask.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/config.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/jlyqfz_account.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/error/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/error/base_error.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/error/login_error.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/rds/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/rds/autopage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/rds/flag.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/rds/semaphore.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/route/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/schedule/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/schedule/disk_schedule.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/schedule/scheduler.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/moxue_timeframe.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/wis_eye_mask.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/spider/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/spider/jlyqfz/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/spider/jlyqfz/jlyqfz_login.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/spider/jlyqfz/jlyqfz_session.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/spider/jlyqfz/wis_eye_mask/feel_free_to_push_commodity.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/spider/jlyqfz/wis_eye_mask/feel_free_to_push_live.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/spider/jlyqfz/wis_eye_mask/feel_free_to_push_material.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/spider/jlyqfz/wis_eye_mask/new_nine_commodity.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sql/wis_eye_mask_model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/cryptotools.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/dsptools.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/feishutools.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/flasktools.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/logintools.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/logtools.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/osstools.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/pagetools.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/smstools.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/sqltools.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/tabtools.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/trycatchtools.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/valuetools.py" afterDir="false" />
+    <list default="true" id="107c093f-41cb-4c75-abd4-dbc376e028d1" name="更改" comment="update: 添加readme">
+      <change afterPath="$PROJECT_DIR$/src/spider/jlyq/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/spider/jlyq/jlyq_login.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/spider/jlyq/jlyq_session.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/spider/jlyq/moxue/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/spider/jlyq/moxue/live_room_scenery.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/spider/jlyq/moxue/live_universal.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/spider/jlyq/moxue/strand_commodity_all.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/spider/jlyq/moxue/universal_commodity.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/jlyqfz_account.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/jlyqfz_account.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rds/flag.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/rds/flag.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/schedule/scheduler.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/schedule/scheduler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/moxue_timeframe.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/wis_eye_mask.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/wis_eye_mask.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/logintools.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/logintools.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +47,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;su590&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/su590/rpa_wis_eye_mask.git&quot;,
+    &quot;accountId&quot;: &quot;8aa11a61-0683-4ff0-81f7-df082602c7d2&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -87,28 +67,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.feel_free_to_push_commodity.executor": "Debug",
-    "Python.feel_free_to_push_live.executor": "Run",
-    "Python.feel_free_to_push_material.executor": "Run",
-    "Python.new_nine_commodity.executor": "Run",
-    "Python.scheduler.executor": "Run",
-    "Python.wis_eye_mask.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/python_workspace/wis_eye_mask",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.feel_free_to_push_commodity.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.feel_free_to_push_live.executor&quot;: &quot;Run&quot;,
+    &quot;Python.feel_free_to_push_material.executor&quot;: &quot;Run&quot;,
+    &quot;Python.new_nine_commodity.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scheduler.executor&quot;: &quot;Run&quot;,
+    &quot;Python.wis_eye_mask.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/python_workspace/wis_eye_mask/src/spider&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\python_workspace\wis_eye_mask\src\spider" />
+    </key>
+  </component>
   <component name="RunManager" selected="Python.scheduler">
     <configuration name="feel_free_to_push_commodity" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="wis_eye_mask" />
@@ -125,6 +110,52 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/spider/jlyqfz/wis_eye_mask/feel_free_to_push_commodity.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="feel_free_to_push_commodity" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="wis_eye_mask" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/spider/jlyqfz/wis_eye_mask" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/spider/jlyqfz/wis_eye_mask/feel_free_to_push_commodity.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="feel_free_to_push_material" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="wis_eye_mask" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/spider/jlyqfz/wis_eye_mask" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/spider/jlyqfz/wis_eye_mask/feel_free_to_push_material.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -179,6 +210,29 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="new_nine_commodity" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="wis_eye_mask" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/spider/jlyqfz/wis_eye_mask" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/spider/jlyqfz/wis_eye_mask/new_nine_commodity.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="scheduler" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="wis_eye_mask" />
       <option name="ENV_FILES" value="" />
@@ -194,6 +248,52 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/schedule/scheduler.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="scheduler" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="wis_eye_mask" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/schedule" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/schedule/scheduler.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="wis_eye_mask" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="wis_eye_mask" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/service" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/service/wis_eye_mask.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -254,19 +354,46 @@
       <workItem from="1756791174936" duration="10530000" />
       <workItem from="1756802831472" duration="14221000" />
       <workItem from="1756883180398" duration="711000" />
-      <workItem from="1756953947022" duration="2921000" />
+      <workItem from="1756953947022" duration="12856000" />
+      <workItem from="1757141398700" duration="1273000" />
+      <workItem from="1757465510608" duration="6119000" />
+      <workItem from="1758028386600" duration="3373000" />
     </task>
+    <task id="LOCAL-00001" summary="update: 添加readme">
+      <option name="closed" value="true" />
+      <created>1756970004974</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1756970004974</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update: 添加readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="update: 添加readme" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/spider/jlyqfz/jlyqfz_session.py</url>
+          <line>25</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/wis_eye_mask$feel_free_to_push_material.coverage" NAME="feel_free_to_push_material 覆盖结果" MODIFIED="1756794919368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/spider/jlyqfz/wis_eye_mask" />
     <SUITE FILE_PATH="coverage/wis_eye_mask$feel_free_to_push_live.coverage" NAME="feel_free_to_push_live 覆盖结果" MODIFIED="1756792779429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/spider/jlyqfz/wis_eye_mask" />
     <SUITE FILE_PATH="coverage/wis_eye_mask$new_nine_commodity.coverage" NAME="new_nine_commodity 覆盖结果" MODIFIED="1756869276744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/spider/jlyqfz/wis_eye_mask" />
-    <SUITE FILE_PATH="coverage/wis_eye_mask$wis_eye_mask.coverage" NAME="wis_eye_mask 覆盖结果" MODIFIED="1756878234773" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/service" />
+    <SUITE FILE_PATH="coverage/wis_eye_mask$wis_eye_mask.coverage" NAME="wis_eye_mask 覆盖结果" MODIFIED="1757640327051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/service" />
     <SUITE FILE_PATH="coverage/wis_eye_mask$feel_free_to_push_commodity.coverage" NAME="feel_free_to_push_commodity 覆盖结果" MODIFIED="1756868617973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/spider/jlyqfz/wis_eye_mask" />
-    <SUITE FILE_PATH="coverage/wis_eye_mask$scheduler.coverage" NAME="scheduler 覆盖结果" MODIFIED="1756954015813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/schedule" />
+    <SUITE FILE_PATH="coverage/wis_eye_mask$scheduler.coverage" NAME="scheduler 覆盖结果" MODIFIED="1758028611242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/schedule" />
   </component>
 </project>

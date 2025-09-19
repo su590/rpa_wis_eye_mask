@@ -137,7 +137,10 @@ class Session(ABC):
             session = _SESSIONS.get(session_key)
         if session is not None:
             if self._safe_check(session):
+                logging.info(f"redis当中的session可用，ttl为：{flag.ttl_hms()}")
                 return session
+            else:
+                logging.warning(f"redis当中的session不可用")
             flag.delete()
 
         with Semaphore(f'session:{self._port}'):
@@ -147,6 +150,7 @@ class Session(ABC):
             else:
                 session = _SESSIONS.get(session_key)
             if session is not None:
+                logging.info(f"使用redis当中的session，ttl为：{flag.ttl_hms()}")
                 return session
             session = self._session()
             _SESSIONS[session_key] = session

@@ -1,15 +1,10 @@
-import dataclasses
-
 from src.service import get_jlyqfz_account
-from src.spider.jlyqfz.jlyqfz_session import JlyqfzSession
+from src.spider.jlyq.jlyq_session import JlyqSession
 from src.spider.jlyqfz.wis_eye_mask.feel_free_to_push_commodity import get_feel_free_to_push_commodity
 from src.spider.jlyqfz.wis_eye_mask.feel_free_to_push_live import get_feel_free_to_push_live
 from src.spider.jlyqfz.wis_eye_mask.feel_free_to_push_material import get_feel_free_to_push_material
 from src.spider.jlyqfz.wis_eye_mask.new_nine_commodity import get_new_nine_commodity
 from src.sql.wis_eye_mask_model import JxFeelFreeToPush, JxNewNine, WisEyeMaskModel
-
-import datetime
-
 from src.utils.feishutools import send_message_by_robot, get_time_period_per_hour, insert_spread_append
 
 ROBOT = "https://open.feishu.cn/open-apis/bot/v2/hook/7c14546c-46d4-487b-98f4-0fce0924a36e" # 机器人链接
@@ -57,26 +52,50 @@ def _assemble_wis_eye_mask_message(wis_eye_mask_model: WisEyeMaskModel) -> str:
     )
     return text
 
+import datetime
+import dataclasses
+
 def _assemble_sheet_list(wis_eye_mask_model: WisEyeMaskModel) -> list:
     """
     组装消息内容同步到飞书表格当中
     :param wis_eye_mask_model:
     :return:
     """
-    assemble_list = [datetime.date.today().strftime('%Y-%m-%d'), get_time_period_per_hour(),
-                     datetime.datetime.now().strftime('%H:%M:%S')]
-    assemble_list.extend(dataclasses.astuple(wis_eye_mask_model.jx_feel_free_to_push))
-    assemble_list.extend(dataclasses.astuple(wis_eye_mask_model.jx_new_nine))
+    assemble_list = [
+        datetime.date.today().strftime('%Y-%m-%d'),
+        get_time_period_per_hour(),
+        datetime.datetime.now().strftime('%H:%M:%S')
+    ]
+
+    # 遍历 jx_feel_free_to_push
+    for field in dataclasses.fields(wis_eye_mask_model.jx_feel_free_to_push):
+        value = getattr(wis_eye_mask_model.jx_feel_free_to_push, field.name)
+        if "ratio" in field.name:  # ratio 结尾的字段加 %
+            assemble_list.append(f"{value}%")
+        else:
+            assemble_list.append(value)
+
+    # 遍历 jx_new_nine
+    for field in dataclasses.fields(wis_eye_mask_model.jx_new_nine):
+        value = getattr(wis_eye_mask_model.jx_new_nine, field.name)
+        if "ratio" in field.name:
+            assemble_list.append(f"{value}%")
+        else:
+            assemble_list.append(value)
+
     return assemble_list
+
 
 def wis_eye_mask_timeframe():
     jx_feel_free_to_push = JxFeelFreeToPush()
     jx_new_nine = JxNewNine()
     wis_eye_mask_model = WisEyeMaskModel()
 
+    # pay attention 在这里原本是用巨量引擎方舟去登录的 后面改为用巨量引擎来登录了
+    # 但是我在这里并没有改变相应的名称 注意一下就行 问题不大
     account = get_jlyqfz_account("WIS_EYE_MASK")
 
-    with JlyqfzSession(account.port, account.username, account.password, account.account) as session:
+    with JlyqSession(account.port, account.username, account.password) as session:
         # 账户 营销部-WIS-剧星-眼膜-随心推
         get_feel_free_to_push_live(session, jx_feel_free_to_push)
         get_feel_free_to_push_material(session, jx_feel_free_to_push)
